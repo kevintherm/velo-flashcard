@@ -201,7 +201,7 @@ export function StudySession() {
                             )}
                         >
                             {/* Front Face (Question) */}
-                            <div className="absolute inset-0 backface-hidden bg-white p-8 rounded-[2.5rem] border-2 border-zinc-100 shadow-xl shadow-zinc-100 flex flex-col items-center justify-center text-center">
+                            <div className="absolute inset-0 backface-hidden bg-white p-8  border-2 border-zinc-100 shadow-xl shadow-zinc-100 flex flex-col items-center justify-center text-center">
                                 <span className="text-xs font-bold text-indigo-400 uppercase tracking-widest mb-4 px-3 py-1 bg-indigo-50 ">Question</span>
                                 <h2 className="text-2xl font-black text-zinc-900 leading-tight">
                                     {currentCard.question}
@@ -214,7 +214,7 @@ export function StudySession() {
                             </div>
 
                             {/* Back Face (Answer) */}
-                            <div className="absolute inset-0 backface-hidden bg-white p-8 rounded-[2.5rem] border-2 border-indigo-500 shadow-xl shadow-indigo-100 flex flex-col items-center justify-center text-center rotate-y-180">
+                            <div className="absolute inset-0 backface-hidden bg-white p-8  border-2 border-indigo-500 shadow-xl shadow-indigo-100 flex flex-col items-center justify-center text-center rotate-y-180">
                                 <span className="text-xs font-bold text-green-600 uppercase tracking-widest mb-4 px-3 py-1 bg-green-50 ">Correct Answer</span>
                                 <h2 className="text-2xl font-black text-indigo-600 leading-tight italic">
                                     "{currentCard.answer}"

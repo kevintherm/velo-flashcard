@@ -266,7 +266,7 @@ export function LoginPage() {
                                 id="invalidate-sessions"
                                 checked={invalidateSessions}
                                 onChange={(e) => setInvalidateSessions(e.target.checked)}
-                                className="h-4 w-4 rounded border-zinc-300 text-indigo-600 focus:ring-indigo-500"
+                                className="h-4 w-4 border-zinc-300 text-indigo-600 focus:ring-indigo-500"
                             />
                             <label 
                                 htmlFor="invalidate-sessions"

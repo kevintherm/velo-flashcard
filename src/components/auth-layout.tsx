@@ -59,17 +59,6 @@ export function AuthLayout({ children, title, description }: AuthLayoutProps) {
                         {children}
                     </div>
                     
-                    <p className="px-8 text-center text-sm font-medium text-zinc-400">
-                        By clicking continue, you agree to our{" "}
-                        <Link to="/terms" className="text-zinc-900 underline underline-offset-4 hover:text-indigo-600 transition-colors">
-                            Terms of Service
-                        </Link>{" "}
-                        and{" "}
-                        <Link to="/privacy" className="text-zinc-900 underline underline-offset-4 hover:text-indigo-600 transition-colors">
-                            Privacy Policy
-                        </Link>
-                        .
-                    </p>
                 </div>
             </div>
         </div>

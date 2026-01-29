@@ -43,7 +43,7 @@ export function StatsPage() {
             <main className="flex-1 p-6 max-w-lg mx-auto w-full space-y-8">
                 {/* Summary Cards */}
                 <section className="grid grid-cols-2 gap-4">
-                    <div className="bg-white p-5 rounded-[2rem] border border-zinc-200 shadow-sm space-y-3">
+                    <div className="bg-white p-5  border border-zinc-200 shadow-sm space-y-3">
                         <div className="h-10 w-10 bg-indigo-50  flex items-center justify-center">
                             <Target className="h-5 w-5 text-indigo-600" />
                         </div>
@@ -52,7 +52,7 @@ export function StatsPage() {
                             <p className="text-xs font-bold text-zinc-400 uppercase tracking-widest">Avg Accuracy</p>
                         </div>
                     </div>
-                    <div className="bg-white p-5 rounded-[2rem] border border-zinc-200 shadow-sm space-y-3">
+                    <div className="bg-white p-5  border border-zinc-200 shadow-sm space-y-3">
                         <div className="h-10 w-10 bg-orange-50  flex items-center justify-center">
                             <TrendingUp className="h-5 w-5 text-orange-600" />
                         </div>
@@ -61,7 +61,7 @@ export function StatsPage() {
                             <p className="text-xs font-bold text-zinc-400 uppercase tracking-widest">Sessions</p>
                         </div>
                     </div>
-                    <div className="bg-white p-5 rounded-[2rem] border border-zinc-200 shadow-sm space-y-3">
+                    <div className="bg-white p-5  border border-zinc-200 shadow-sm space-y-3">
                         <div className="h-10 w-10 bg-blue-50  flex items-center justify-center">
                             <BookOpen className="h-5 w-5 text-blue-600" />
                         </div>
@@ -70,7 +70,7 @@ export function StatsPage() {
                             <p className="text-xs font-bold text-zinc-400 uppercase tracking-widest">Total Cards</p>
                         </div>
                     </div>
-                    <div className="bg-white p-5 rounded-[2rem] border border-zinc-200 shadow-sm space-y-3">
+                    <div className="bg-white p-5  border border-zinc-200 shadow-sm space-y-3">
                         <div className="h-10 w-10 bg-green-50  flex items-center justify-center">
                             <Award className="h-5 w-5 text-green-600" />
                         </div>
@@ -114,7 +114,7 @@ export function StatsPage() {
                                 </div>
                             ))
                         ) : (
-                            <div className="text-center py-12 bg-white rounded-[2.5rem] border border-zinc-100 shadow-sm">
+                            <div className="text-center py-12 bg-white  border border-zinc-100 shadow-sm">
                                 <div className="h-12 w-12 bg-zinc-50  flex items-center justify-center mx-auto mb-4">
                                     <TrendingUp className="h-6 w-6 text-zinc-300" />
                                 </div>
