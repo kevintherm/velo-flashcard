@@ -4,8 +4,8 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { 
-    LogOut, User, Mail, Shield, ChevronRight, ArrowLeft, 
-    Pencil, Check, X, Loader2, KeyRound, Camera 
+    LogOut, Mail, Shield, ChevronRight, ArrowLeft, 
+    Pencil, Check, X, Loader2, Camera 
 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { useRef } from "react";
