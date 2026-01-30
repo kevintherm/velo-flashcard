@@ -11,7 +11,7 @@ export function RegisterPage() {
     const navigate = useNavigate();
     const register = useRegister();
 
-    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    const handleSubmit = async (e: React.SubmitEvent<HTMLFormElement>) => {
         e.preventDefault();
         const formData = new FormData(e.currentTarget);
         const name = formData.get("name") as string;
@@ -25,17 +25,16 @@ export function RegisterPage() {
         }
 
         register.mutate({
-            username: email.split('@')[0] + Math.floor(Math.random() * 1000), // PocketBase often requires username if not provided, or it auto-generates.
+            name,
             email,
             password,
             passwordConfirm: confirmPassword,
-            name,
         }, {
             onSuccess: () => {
                 toast.success("Registration successful! Please login.");
                 navigate("/login");
             },
-            onError: (error: any) => {
+            onError: (error: Error) => {
                 toast.error(error.message || "Registration failed");
             }
         });

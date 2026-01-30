@@ -13,7 +13,7 @@ export function DashboardPage() {
     const { data: flashcards, isLoading: isCardsLoading } = useFlashcards();
     const { data: sessions, isLoading: isSessionsLoading } = useSessions();
 
-    const recentCards = flashcards?.slice(0, 3) || [];
+    const recentCards = flashcards || [];
     const streakCount = sessions ? calculateStreak(sessions) : 0;
     const isLoading = isCardsLoading || isSessionsLoading;
 
